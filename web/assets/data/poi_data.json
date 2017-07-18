@@ -1,0 +1,182 @@
+[
+  {
+    "location": {
+      "longitude": -83.00655570000004,
+      "latitude": 39.9560307
+    },
+    "name": "Festival Merchandise",
+    "boothNumber": "merch1",
+    "website": "",
+    "type": "merchandise"
+  },
+  {
+    "location": {
+      "longitude": -83.00542919999998,
+      "latitude": 39.9575706
+    },
+    "name": "Festival Merchandise",
+    "boothNumber": "merch2",
+    "website": "",
+    "type": "merchandise"
+  },
+  {
+    "location": {
+      "longitude": -83.00833669999997,
+      "latitude": 39.9564501
+    },
+    "name": "First Aid",
+    "boothNumber": "firstaid1",
+    "website": "",
+    "type": "first_aid"
+  },
+  {
+    "location": {
+      "longitude": -83.00349269999998,
+      "latitude": 39.956921
+    },
+    "name": "First Aid",
+    "boothNumber": "firstaid2",
+    "website": "",
+    "type": "first_aid"
+  },
+  {
+    "location": {
+      "longitude": -83.0062231,
+      "latitude": 39.9578235
+    },
+    "name": "Beverages",
+    "boothNumber": "bev1",
+    "website": "",
+    "type": "beverages"
+  },
+  {
+    "location": {
+      "longitude": -83.0079639,
+      "latitude": 39.9570484
+    },
+    "name": "Beverages",
+    "boothNumber": "bev2",
+    "website": "",
+    "type": "beverages"
+  },
+  {
+    "location": {
+      "longitude": -83.0042651,
+      "latitude": 39.9555691
+    },
+    "name": "Beverages",
+    "boothNumber": "bev3",
+    "website": "",
+    "type": "beverages"
+  },
+  {
+    "location": {
+      "longitude": -83.0044542,
+      "latitude": 39.9556586
+    },
+    "name": "Beverages",
+    "boothNumber": "bev4",
+    "website": "",
+    "type": "beverages"
+  },
+  {
+    "location": {
+      "longitude": -83.00232719999997,
+      "latitude": 39.9557408
+    },
+    "name": "Beverages",
+    "boothNumber": "bev5",
+    "website": "",
+    "type": "beverages"
+  },
+  {
+    "location": {
+      "longitude": -83.00340949999998,
+      "latitude": 39.9568367
+    },
+    "name": "Beverages",
+    "boothNumber": "bev6",
+    "website": "",
+    "type": "beverages"
+  },
+  {
+    "location": {
+      "longitude": -83.00347449999998,
+      "latitude": 39.9570469
+    },
+    "name": "Beverages",
+    "boothNumber": "bev7",
+    "website": "",
+    "type": "beverages"
+  },
+  {
+    "location": {
+      "longitude": -83.00316270000002,
+      "latitude": 39.9582738
+    },
+    "name": "Beverages",
+    "boothNumber": "bev8",
+    "website": "",
+    "type": "beverages"
+  },
+  {
+    "location": {
+      "longitude": -83.00406929999997,
+      "latitude": 39.9562507
+    },
+    "name": "ABC 6 Main Stage",
+    "boothNumber": "stage1",
+    "website": "",
+    "type": "stage"
+  },
+  {
+    "location": {
+      "longitude": -83.0027202,
+      "latitude": 39.9563237
+    },
+    "name": "IKEA Dance and Theater Stage",
+    "boothNumber": "stage2",
+    "website": "",
+    "type": "stage"
+  },
+  {
+    "location": {
+      "longitude": -83.00582350000002,
+      "latitude": 39.9595361
+    },
+    "name": "Demonstrations",
+    "boothNumber": "stage3",
+    "website": "",
+    "type": "stage"
+  },
+  {
+    "location": {
+      "longitude": -83.00593349999997,
+      "latitude": 39.9601426
+    },
+    "name": "Big Local Arts Tent",
+    "boothNumber": "stage4",
+    "website": "",
+    "type": "stage"
+  },
+  {
+    "location": {
+      "longitude": -83.0057913,
+      "latitude": 39.960342
+    },
+    "name": "Ohio Magazine Word is Art Stage",
+    "boothNumber": "stage5",
+    "website": "",
+    "type": "stage"
+  },
+  {
+    "location": {
+      "longitude": -83.00308089999999,
+      "latitude": 39.9584968
+    },
+    "name": "Pelotonia",
+    "boothNumber": "stage6",
+    "website": "",
+    "type": "stage"
+  }
+]

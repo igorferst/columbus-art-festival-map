@@ -1,0 +1,17 @@
+{
+  "name": "caf-map",
+  "version": "1.0.0",
+  "author": "Igor Ferst",
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-google-maps": "^2.3.2",
+    "angular-material": "^1.0.5",
+    "angular-mocks": "^1.5.0",
+    "angular-route": "^1.5.0",
+    "underscore": "^1.8.3"
+  }
+}

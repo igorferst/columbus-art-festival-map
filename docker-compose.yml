@@ -1,0 +1,8 @@
+nginx:
+  build: nginx/
+  volumes:
+    - ./nginx/public/:/usr/local/nginx/public/
+    - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+  ports:
+    - "80:80"
+    - "443:443"

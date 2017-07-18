@@ -1,0 +1,153 @@
+.angular-google-map-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+#cat-search-list {
+  padding: 10px;
+  height: 300px;
+  overflow: scroll;
+  background: rgb(250, 250, 250);
+}
+
+#search-controls {
+  box-sizing: border-box;
+  position: fixed;
+  width: 300px;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+@media (max-width: 540px){
+  #search-controls {
+    width: 100%;
+  }
+}
+
+#map-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  bottom: 40px;
+}
+
+/* Styles for Map Artist Thumbnail */
+.artist-name {
+  font-weight: 500;
+  font-size: 14px;
+  width: 105px;
+}
+
+.studio-name {
+  font-weight: 300;
+  font-size: 13px;
+  width: 105px;
+  margin-top: 2px;
+}
+
+.booth-number {
+  font-weight: 400;
+  font-size: 13px;
+  width: 105px;
+  margin-top: 2px;
+}
+
+.artist-site {
+  padding-top: 5px;
+}
+
+.artist-site a {
+  text-decoration: none;
+  color: #427fed;
+  font-weight: 400;
+}
+
+.artist-image {
+  margin: 2px 0;
+  width: 105px;
+  height: 105px;
+}
+
+/* Styles for Icon Button */
+.icon-btn {
+  position: fixed;
+  bottom: 60px;
+  right: 0;
+  min-width: 46px;
+}
+
+/* Styles for Preloader Screen */
+.preloader {
+  position: fixed;
+  z-index: 9999;
+  background-color: white;
+  width: 100%;
+}
+
+.preloader img {
+  margin: 150px auto 30px;
+  display: block;
+  width: 70%;
+  max-width: 500px;
+
+}
+
+md-progress-linear {
+  width: 60%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.animate-hide {
+  transition: opacity .75s, height .5s;
+  opacity: 1;
+  height: 100%;
+}
+
+.animate-hide.ng-hide {
+  opacity: 0;
+  height: 0;
+}
+
+/* Styles for the bottom-sheet Legend */
+
+.bottom-sheet {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 40px;
+  width: 100%;
+}
+
+.bottom-sheet button {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+md-bottom-sheet md-icon {
+  display: block;
+  margin: 0 auto;
+  width: 32px;
+  height: 32px;
+}
+
+md-bottom-sheet.md-grid md-list-item {
+  height: 70px;
+}
+
+md-bottom-sheet.md-grid md-list-item .md-grid-text {
+  white-space: normal;
+  width: 100%;
+}
+
+md-bottom-sheet.md-grid md-list-item > div {
+  margin: 0 auto;
+  display: block;
+}

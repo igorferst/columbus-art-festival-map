@@ -1,0 +1,131 @@
+<div class="preloader animate-hide" ng-hide="ctrl.hidePreloader">
+  <div>
+    <img src="assets/img/caf_logo.png"></img>
+    <md-progress-linear class="md-accent md-hue-2" md-mode="indeterminate"></md-progress-linear>
+  </div>
+</div>
+
+<div id="map-wrapper">
+  <!-- The Google Map -->
+  <ui-gmap-google-map
+    class="sample-map"
+    center="ctrl.map.center"
+    zoom="ctrl.map.zoom"
+    options="ctrl.map.options"
+    events="ctrl.map.mapEvents"
+    control="ctrl.map.control"
+  >
+
+    <ui-gmap-marker
+      idkey="'currentPos'"
+      coords="currentPosition"
+      options="{icon:'assets/svgs/current-location_marker.svg', zIndex: 999}"
+    ></ui-gmap-marker>
+
+    <!-- The directive that drawers the markers for all selected booths -->
+    <ui-gmap-markers
+      models="selectedBoothMarkerModels"
+      coords="'position'"
+      events="ctrl.map.boothEvents"
+      control="selectedBoothMarkersControl"
+      options={icon:"assets/svgs/booth_marker.svg"}
+    ></ui-gmap-markers>
+
+    <!-- The directive that drawers the markers for all beverage stands -->
+    <ui-gmap-markers
+      models="beverageMarkerModels"
+      coords="'position'"
+      events="ctrl.map.boothEvents"
+      options={icon:"assets/svgs/beverage_marker.svg"}
+    ></ui-gmap-markers>
+
+    <!-- The directive that drawers the markers for all food stands -->
+    <ui-gmap-markers
+      models="foodMarkerModels"
+      coords="'position'"
+      events="ctrl.map.boothEvents"
+      options={icon:"assets/svgs/food_marker.svg"}
+    ></ui-gmap-markers>
+
+    <!-- The directive that drawers the markers for first aid -->
+    <ui-gmap-markers
+      models="firstAidMarkerModels"
+      coords="'position'"
+      events="ctrl.map.boothEvents"
+      options={icon:"assets/svgs/first-aid_marker.svg"}
+    ></ui-gmap-markers>
+
+    <!-- The directive that drawers the markers for all restrooms -->
+    <ui-gmap-markers
+      models="restroomMarkerModels"
+      coords="'position'"
+      events="ctrl.map.boothEvents"
+      options={icon:"assets/svgs/restroom_marker.svg"}
+    ></ui-gmap-markers>
+
+    <!-- The directive that drawers the markers for all merch stands -->
+    <ui-gmap-markers
+      models="merchMarkerModels"
+      coords="'position'"
+      events="ctrl.map.boothEvents"
+      options={icon:"assets/svgs/merch_marker.svg"}
+    ></ui-gmap-markers>
+
+    <!-- The directive that drawers the markers for all stages -->
+    <ui-gmap-markers
+      models="stageMarkerModels"
+      coords="'position'"
+      events="ctrl.map.boothEvents"
+      options={icon:"assets/svgs/stage_marker.svg"}
+      control="stageMarkersControl"
+    ></ui-gmap-markers>
+
+  </ui-gmap-google-map>
+</div>
+
+<div ng-show="ctrl.allDataReceived" id="search-controls">
+
+  <!-- Widget for showing artists by category -->
+  <expando-toggle content-data="artistSearchControls.category">
+    <div id="cat-search-list">
+      <div ng-repeat="category in categories">
+        <md-checkbox ng-model="category.selected" ng-change="showSelectedBooths()">
+          {{category.name}}
+        </md-checkbox>
+      </div>
+    </div>
+  </expando-toggle>
+
+  <!-- Widget for searching for artists by name -->
+  <expando-toggle content-data="artistSearchControls.name">
+    <md-autocomplete
+      id="autocomplete-artist-name"
+      md-selected-item="ctrl.selectedBooth"
+      md-search-text="ctrl.boothSearchText"
+      md-items="booth in findBoothsByString(ctrl.boothSearchText)"
+      md-item-text="booth.getDisplayName()"
+      md-delay="300"
+      md-min-length="3"
+      md-no-cache
+      md-selected-item-change="showSelectedBooth(ctrl.selectedBooth)"
+      placeholder="Type artist or studio name..."
+      >
+      <md-item-template>
+        <span md-highlight-text="ctrl.boothSearchText">{{booth.getDisplayName()}}</span>
+      </md-item-template>
+      <md-not-found>
+        <div ng-click="ctrl.selectBigLocal()" style="font-size: .9em;">
+          No such booth. Check the Big Local Arts tent!
+        </div>
+      </md-not-found>
+    </md-autocomplete>
+  </expando-toggle>
+
+  <md-button class="md-raised icon-btn" ng-controller="LocationButtonCtrl" ng-click="goToCurrentLocation(ctrl.map.center)">
+    <md-icon md-svg-src="assets/svgs/my_location.svg" aria-label="Go To Current Location"></md-icon>
+  </md-button>
+</div>
+
+<div ng-controller="BottomSheetCtrl" class="bottom-sheet">
+  <md-button ng-click="showBottomSheet()">Legend</md-button>
+</div>

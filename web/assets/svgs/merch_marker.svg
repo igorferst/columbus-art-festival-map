@@ -1,0 +1,18 @@
+<svg width="36" height="32" xmlns="http://www.w3.org/2000/svg">
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_3">
+   <text fill="#ffffff" stroke-width="0" stroke-opacity="null" x="243.405253" y="140.977295" id="svg_6" font-size="20" font-family="Oswald, sans-serif" text-anchor="start" xml:space="preserve" transform="matrix(7.407178133726119,0,0,7.407178133726119,-1743.603928178083,-880.4656643280758) " stroke="#ffffff" font-weight="bold">B</text>
+   <ellipse stroke="#000" ry="10" rx="10" id="svg_4" cy="18.220697" cx="10.463895" stroke-width="0" fill="#fff"/>
+   <ellipse ry="9" rx="9" id="svg_5" cy="18.220696" cx="10.463895" stroke-width="0" stroke="#000" fill="#384c93"/>
+   <text fill="#ffffff" stroke="#000" stroke-width="0" stroke-opacity="null" x="4.646631" y="23.052393" id="svg_7" font-size="14" font-family="Oswald, sans-serif" text-anchor="start" xml:space="preserve" font-weight="bold">M</text>
+   <ellipse stroke="#000" ry="8" rx="8" id="svg_8" cy="8.426162" cx="25.101733" stroke-width="0" fill="#fff"/>
+   <ellipse ry="7" rx="7" id="svg_9" cy="8.426162" cx="25.101733" stroke-width="0" stroke="#000" fill="#00c7ff"/>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Georgia, Times, 'Times New Roman', serif" font-size="12" id="svg_10" y="12.61917" x="22.988079" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#ffffff">i</text>
+   <ellipse stroke="#000" ry="8" rx="8" id="svg_11" cy="23.376775" cx="27.228599" stroke-width="0" fill="#fff"/>
+   <ellipse ry="7" rx="7" id="svg_12" cy="23.376775" cx="27.228599" stroke-width="0" stroke="#000" fill="#00bf00"/>
+   <text font-weight="bold" xml:space="preserve" text-anchor="start" font-family="Oswald, sans-serif" font-size="12" id="svg_13" y="27.51378" x="23.893959" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#ffffff">$</text>
+  </g>
+ </g>
+
+</svg>
